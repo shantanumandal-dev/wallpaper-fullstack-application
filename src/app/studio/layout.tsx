@@ -6,11 +6,13 @@ type StudioLayoutProps = {
 };
 
 const StudioLayout = ({ children }: Readonly<StudioLayoutProps>) => {
-	return;
-	<>
-		<Header />
-		<main className="mx-auto max-w-7xl px-6 py-3">{children}</main>;
-	</>;
+	return (
+		<>
+			<Header />
+
+			<main className="mx-auto max-w-7xl px-6 py-3">{children}</main>
+		</>
+	);
 };
 
 export default StudioLayout;

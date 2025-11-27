@@ -6,11 +6,13 @@ type FrontendLayoutProps = {
 };
 
 const FrontendLayout = ({ children }: Readonly<FrontendLayoutProps>) => {
-	return;
-	<>
-		<Header />
-		<main className="mx-auto max-w-7xl px-6 py-3">{children}</main>;
-	</>;
+	return (
+		<>
+			<Header />
+
+			<main className="mx-auto max-w-7xl px-6 py-3">{children}</main>
+		</>
+	);
 };
 
 export default FrontendLayout;
